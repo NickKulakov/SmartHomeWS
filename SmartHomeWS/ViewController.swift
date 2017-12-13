@@ -13,6 +13,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     
@@ -35,11 +36,13 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             return cell
         }
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return self.view.frame.size
-//            // CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)// UIScreen.main.bounds
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return self.view.frame.size
+    }
+    //    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    //        return self.view.frame.size
+    //            // CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)// UIScreen.main.bounds
+    //    }
 }
 
 
